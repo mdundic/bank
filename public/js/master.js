@@ -28,8 +28,8 @@ $('#btn_save').click(function(e){
         },
         error: function(data, status, error) {
             let response = JSON.parse(data.responseText);
+
             alert(response.errors)
         }
     });
 });
-

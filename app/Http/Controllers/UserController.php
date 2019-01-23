@@ -15,7 +15,7 @@ class UserController extends Controller
 
     public function __construct(UserValidator $validator, UserRepository $userRepository)
     {
-        $this->validator = $validator;
+        $this->validator      = $validator;
         $this->userRepository = $userRepository;
     }
 
@@ -32,9 +32,9 @@ class UserController extends Controller
     {
         try {
             $this->validator->validateUser($request);
-
         } catch (ValidationException $exception) {
             $errors = '';
+
             foreach ($exception->errors() as $error) {
                 $errors .= implode(' ', $error) . ' ';
             }
@@ -49,7 +49,6 @@ class UserController extends Controller
             'email'    => $request->get('email'),
             'password' => $request->get('password'),
             'balance'  => $request->get('balance'),
-
         ]);
 
         return response()->json('success', 201);
