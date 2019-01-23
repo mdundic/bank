@@ -25,7 +25,7 @@ You can find the instructions for the setup at the end of the page.
 
 We are going to create the database for an imaginary banking system. This system will be used by millions of users.
 
-###Exercise 1 mysql
+### Exercise 1 mysql
 
 This part has to be done completely in mysql.
 
@@ -65,8 +65,8 @@ This part has to be done completely in php. Try to write as speed efficient as p
     [resources/views/welcome.blade.php](resources/views/welcome.blade.php)
     
 
-##Environment Setup
-####Prerequisites
+## Environment Setup
+#### Prerequisites
 
 Docker
 
