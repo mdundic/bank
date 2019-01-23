@@ -78,6 +78,7 @@ https://docs.docker.com/v1.11/compose/install/
 
 Note: you should be able to run docker without sudo
 Installation
+
 Clone the project
 
     $ git clone https://github.com/mdundic/bank.git
@@ -90,6 +91,8 @@ Setup the laravel env
 Build the docker environment
 
     $ docker-compose up -d
+    $ docker exec -it php composer install
+    $ docker exec -it mysql mysql -proot -uroot -e "CREATE DATABASE IF NOT EXISTS bank;
 
 
 
