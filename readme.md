@@ -1,22 +1,3 @@
-# Summary
-
-I decided to use the following stack to complete this test:
-   - PHP 7.0
-   - Laravel 5.7
-   - nginx 1.10
-   - mysql 5.7
-   
-
-The back-end logic is separated into different layers such as:
-   - controller
-   - repository
-   - validation
-   - model
-   
-
-**Below each exercise you can find links to files where my code is.**
-
-
 The project is containerised and it runs on docker.
 You can find the instructions for the setup at the end of the page.
 
